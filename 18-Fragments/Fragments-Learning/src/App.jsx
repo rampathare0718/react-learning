@@ -11,12 +11,13 @@ import './App.css'
 function App() {
 
   let fooditems=["roti","rice","meat","ghee","milk"];
-  return
-  <React.Fragment>
+  return(
+    <>
   <h1> Healthy Foods </h1>
-  <ErrorMessage></ErrorMessage>
-  <FoodItems></FoodItems>
-   </React.Fragment>
+  <ErrorMessage items={fooditems}></ErrorMessage>
+  <FoodItems items={fooditems}></FoodItems>
+   </>
+  );
 }
 
 export default App
